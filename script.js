@@ -25,12 +25,15 @@
         let moves = document.querySelector(".moves");
         moves.textContent = `${response.moves[0].move.name}, ${response.moves[1].move.name}, ${response.moves[2].move.name}, ${response.moves[3].move.name}`;
 
-        let pokeImage = new Image(300,300);
-        pokeImage.src = response.sprites.front_shiny;
-        document.querySelector(".sprites").appendChild(pokeImage);
-
+        function AddingImage(){
+            const imageCont = document.querySelector(".sprites") // Container div where image needs to be
+            let pokeImage = new Image(300,300);
+            pokeImage.src = response.sprites.front_shiny;
+            imageCont.innerHTML = '';
+            imageCont.appendChild(pokeImage); // you put newimage (pokeImage) in the div container with appendchild
+        }
+        AddingImage(response);
         console.log(response)
         console.log(response.name, response.id, response.moves[0],response.moves[1],response.moves[2],response.moves[3],response.moves[4],response.sprites.front_shiny);
     }
-
 
