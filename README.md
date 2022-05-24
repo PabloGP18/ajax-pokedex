@@ -2,6 +2,7 @@
 
 ## Link
 
+https://pablogp18.github.io/ajax-pokedex/
 
 ## Learning Objectives
 
