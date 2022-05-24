@@ -42,7 +42,7 @@
         function AddingImage(){
             const imageCont = document.querySelector(".sprites") // Container div where image needs to be
             let pokeImage = new Image(300,300);
-            pokeImage.src = response.sprites.front_shiny;
+            pokeImage.src = response.sprites.other.home.front_default;;
             imageCont.innerHTML = '';
             imageCont.appendChild(pokeImage); // you put newimage (pokeImage) in the div container with appendchild
         }
