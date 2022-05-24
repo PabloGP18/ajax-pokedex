@@ -8,27 +8,21 @@
     <title>Document</title>
 </head>
 <body>
-<div class="container">
-    <div class="content">
-        <section class="material">
-            <form action="#" method="post">
-                <div class="field">
-                    <label for="poke-id">Id of pokemon:</label>
+<div class="container-main">
+        <div class="title"><h1>Pokedex</h1></div>
+        <div class="search">
+            <form class="form" action="#" method="post">
+                    <label for="poke-id">Id or name of pokemon:</label>
                     <input type="text" name="poke-id" id="poke-id" />
-                </div>
-                <div class="actions">
-                    <button type="button" id="run">Run the script</button>
-                </div>
+                    <button type="button" id="run">Go</button>
             </form>
-        </section>
-        <section>
+        </div>
+        <div class="features">
             <div class="name"></div>
             <div class="id"></div>
             <div class="moves"></div>
             <div class="sprites"></div>
-
-        </section>
-    </div>
+        </div>
 </div>
 <script src="script.js"></script>
 </body>
