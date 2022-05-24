@@ -17,17 +17,17 @@
         let response = await data.json();
 
         let name = document.querySelector(".name");
-        name.textContent = response.name;
+        name.textContent = "Name: " + response.name;
 
         let id = document.querySelector(".id");
-        id.textContent = response.id;
+        id.textContent = "Id: " + response.id;
 
         function moves (){
             const move = [];
 
             if (response.moves.length === 1){
                 move.push(response.moves[0].move.name);
-                document.querySelector(".moves").textContent= move;
+                document.querySelector(".moves").textContent="Moves: " + move;
             }
 
             else{
@@ -36,7 +36,7 @@
                 }
 
                 console.log(move)
-            document.querySelector(".moves").textContent= move;
+            document.querySelector(".moves").textContent="Moves: " + move;
         }}
 
         function AddingImage(){
