@@ -1,0 +1,34 @@
+*{
+    margin:0;
+    padding: 0;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: wrap;
+}
+.title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: red;
+    padding: 50px;
+}
+.features{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 50px;
+}
+.search{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+}
+.name{
+    text-align: left;
+}
