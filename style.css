@@ -1,7 +1,7 @@
 *{
     margin:0;
     padding: 0;
-    font-family: sans-serif;
+    font-family: 'Noto Sans JP', sans-serif;
 }
 
 .container{
@@ -21,16 +21,15 @@
     font-size: x-large;
 }
 .features{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+    word-wrap:break-word;
+    letter-spacing: 0.1rem;
     padding: 50px;
+    height: 100px;
+    width: 200px;
+    margin: 0 auto;
 }
 .search{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    text-align: center;
     padding: 40px;
 }
 input{
@@ -48,4 +47,16 @@ input{
 button:hover{
     color: whitesmoke;
     background: red;
+}
+.align-features{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 387px;
+    letter-spacing: 5px;
+}
+.align-text-features{
+    padding: 30px;
+    border: 1px solid red;
 }
