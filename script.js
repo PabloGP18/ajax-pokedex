@@ -52,6 +52,7 @@
                 document.body.style.background = "red"
                 document.querySelector(".header").style.background= "blue"
                 document.querySelector(".align-text-features").style.border= "1px solid white"
+                document.getElementById("border").style.boxShadow = "10px 20px 30px white";
             }
             else if (responseEvo.color.name === "black")
             {
@@ -71,14 +72,19 @@
         }
         // fixing original colors, this way it doesn't paste the colors above
         document.getElementById("border").style.border= "1px solid red"
+        document.getElementById("border").style.boxShadow = "10px 20px 30px red";
         document.querySelector(".header").style.background= "red"
         document.querySelector(".name").style.color= "black"
         document.querySelector(".id").style.color= "black"
         document.querySelector(".moves").style.color= "black";
 
         // printing in html the name, id, moves of the selected pokemon
+
         let name = document.querySelector(".name");
         name.textContent = "Name: " + response.name;
+        if (input === "mr mime" ){
+            input = "mr-mime"
+        }
 
         let id = document.querySelector(".id");
         id.textContent = "Id: " + response.id;
@@ -107,7 +113,6 @@
             imageCont.innerHTML = '';
             imageCont.appendChild(pokeImage); // you put newimage (pokeImage) in the div container with appendchild
         }
-
         colors()
         moves();
         AddingImage(response);
