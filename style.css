@@ -21,9 +21,10 @@
     font-size: x-large;
 }
 .features{
+    font-weight: bold;
     word-wrap:break-word;
     letter-spacing: 0.1rem;
-    padding: 50px;
+    padding: 70px;
     height: 100px;
     width: 200px;
     margin: 0 auto;
@@ -44,10 +45,7 @@ input{
     padding: 10px;
     border: 1px solid red;
 }
-button:hover{
-    color: whitesmoke;
-    background: red;
-}
+
 .align-features{
     display: flex;
     justify-content: center;
@@ -58,5 +56,10 @@ button:hover{
 }
 .align-text-features{
     padding: 30px;
-    border: 1px solid red;
+}
+button{
+    padding-left: 10px;
+}
+.sprites{
+    padding-top: 5px;
 }
