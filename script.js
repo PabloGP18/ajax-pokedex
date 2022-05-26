@@ -12,7 +12,7 @@
         const evo_Url="https://pokeapi.co/api/v2/pokemon-species/";
         const poke_url = "https://pokeapi.co/api/v2/pokemon/";
         let inputPokeInfo = document.getElementById("poke-id").value;
-        let input = inputPokeInfo;
+        let input = inputPokeInfo.toLowerCase();
 
         let data = await fetch(`${poke_url}${input}`)
         let response = await data.json();
